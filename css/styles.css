@@ -58,10 +58,17 @@ body {
 /* WEBSTUDIO Styling (Header)*/
 .container-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .web-nav {
     display: flex;
+}
+
+.web-nav-list {
+    gap: 40px;
+    flex-wrap: nowrap;
 }
 
 .logo-div {
@@ -106,7 +113,7 @@ top: 15px;
 
 
 .active-cntc {
-    padding-right: 300px;
+   /* padding-right: 300px;*/
 }
 /*Main Section*/
 /*Hero Section*/
@@ -295,6 +302,9 @@ background-color: var(--white);
 .customer-icon {
     border: 1px solid #8e8f99;
     padding: 16px 32px;
+    text-align: center;
+    border-radius: 4px;
+    flex-basis: calc(100% / 2 300px);
     
 }
 
@@ -317,7 +327,7 @@ background-color: var(--white);
 }
 
 .phonenumber {
-    padding: 20px 24px 156px;
+    padding: 20px 24px;
 }
 
 .list-contact {
@@ -521,6 +531,7 @@ background-color: var(--white);
     flex-shrink: 0;
     /*padding-left: 156px;*/
     padding-top: 80px;
+    /*text-align: center;*/
    
 }
 
@@ -547,9 +558,9 @@ background-color: var(--white);
 }
 
 .footer-subscribe {
-    width: 453px;
+    /*width: 453px;
     height: 80px;
-    flex-shrink: 0;
+    flex-shrink: 0;*/
 }
 
 .footer-subscribe-text {
@@ -559,9 +570,11 @@ background-color: var(--white);
 }
 
 .input-subscribe {
-    width: 264px;
+    width: -webkit-fill-available;
     height: 40px;
     flex-shrink: 0;
+    margin-bottom: 16px;
+    /*margin-right: 24px;*/
     background: none;
     border-radius: 4px;
     border: 1px solid var(--WHITE, #FFF);
@@ -580,7 +593,7 @@ background-color: var(--white);
     border: 1px solid var(--iris);
     border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
-    margin-left: 14px;
+    /*margin-left: 14px;*/
 }
 
 .subscribe-btn {
@@ -755,7 +768,7 @@ main {
     .container {
         width: 768px;
     }
-    .about-item
+    .about-item,
     .team-item {
         flex-basis: calc(100% / 2 - 30px);
     }
@@ -764,6 +777,9 @@ main {
         flex-basis: calc(100% 3 / 30px);
     }
 
+    .footer {
+       /* text-align: center;*/
+    }
     
 }
 
@@ -772,7 +788,7 @@ main {
         width: 1200px;
     }
 
-    .about-item
+    .about-item,
     .team-item {
         flex-basis: calc(100% / 4 - 30px);
     }
@@ -780,4 +796,46 @@ main {
     .customer-icon {
         flex-basis: calc(100% / 6 - 30px);
     }
+
+    .input-subscribe {
+        width: 264px;
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 427px) {
+    .footer-inner {
+            justify-content: center;
+            text-align: center;
+        }
+
+    .about-item h3 {
+        text-align: center;
+    }
+}
+
+@media ( max-width: 767px) {
+    .what-we-do {
+        display: none;
+    }
+
+    .about-item h3 {
+        font-size: 36px;
+        margin-bottom: 8px;
+    }
+
+    .list-prgh {
+        margin: 0;
+    }
+    
+    .component-icon {
+        display: none;
+    }
+
+    .footer-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+
 }
