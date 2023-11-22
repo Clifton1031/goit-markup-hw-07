@@ -9,27 +9,34 @@
 
 }
 
+* {
+    box-sizing: border-box;
+}
 /*General Styling*/
-.main-page {
+/*.main-page {
     width: 1440px;
-    height: 2592px;
+    height: 2592px;*/
     background: var(--white);
 }
 body {
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 .list {
     list-style: none;
     padding-left: 0;
-    display: inline-flex;
-    gap: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
 
 }
 
+
 .inline {
-    display: inline-flex;
-    padding-left: 156px;
+   /* display: inline-flex;
+    padding-left: 156px;*/
 }
 .logo {
     text-transform: uppercase;
@@ -49,10 +56,23 @@ body {
 /* End of General Styling*/
 
 /* WEBSTUDIO Styling (Header)*/
+.container-header {
+    display: flex;
+}
+
+.web-nav {
+    display: flex;
+}
+
+.logo-div {
+    align-items: center;
+    display: flex;
+    padding-right: 40px;
+}
 
 .logo-studio-top {
     color: var(--navyblue);
-    padding-right: 50px;
+    /*padding-right: 50px;*/
 }
 
 .header-nav-link{
@@ -91,33 +111,65 @@ top: 15px;
 /*Main Section*/
 /*Hero Section*/
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-    text-align: center;
 }
-/*.hero {
-    background-color: var(--navyblue);
-    width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
+
+
+.hero-text {
+    color: var(--white);
+    /*text-transform: uppercase;*/
     text-align: center;
-}*/
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    /* 107.143% */
+    letter-spacing: 1.12px;
+    padding-top: 188px;
+
+}
+
+.hero-button {
+    border: none;
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    color: var(--white);
+    line-height: 1.5;
+    padding: 16px 32px;
+}
+
+.hero-button:hover {
+    cursor: pointer;
+    background: var(--ocean);
+}
+
+
+.section-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2.5;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+}
 /*End of hero section*/
 
 /*Component Section*/
-
+.about-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .component-icon {
+    /*width: 264px;*/
     padding: 24px 0;
     text-align: center;
     background-color: var(--cloud);
 }
 
-
-.component {
-    display: inline-flex;
-}
 .list-title {
     color: var(--navyblue);
     font-size: 20px;
@@ -127,46 +179,17 @@ top: 15px;
     letter-spacing: 0.4px;
 }
 
-.list-strategy {
+.about-item {
 
-    padding-top: 120px;
-    padding-left: 156px;
-    padding-right: 12px;
-    width: 264px;
+    /*padding-top: 120px;*/
+    /*padding-left: 156px;*/
+    /*padding-right: 12px;*/
+    /*width: 264px;*/
     gap: 8px;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.list-punctuality {
-    padding-top: 120px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 264px;
-    gap: 8px;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.list-diligence {
-    padding-top: 120px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 264px;
-    gap: 8px;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.list-tech {
-    padding-top: 120px;
-    padding-left: 12px;
-    padding-right: 156px;
-    width: 264px;
-    gap: 8px;
-    align-items: flex-start;
-    flex-direction: column;
-}
 
 .list-prgh {
     color: var(--slate);
@@ -179,10 +202,10 @@ top: 15px;
 
 /*What we do section*/
 .gadgets-images {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     gap: 24px;
-    padding-left: 156px;
+    /*padding-left: 156px;*/
 }
 
 .desktop-image {
@@ -201,12 +224,14 @@ top: 15px;
 
 /*Our team*/
 .teamlayout {
-    width: 1440px;
-    height: 780px;
+    /*width: 1440px;
+    height: 780px;*/
     flex-shrink: 0;
     background: var(--cloud);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    padding: 120px 156px;
+    display: contents;
 }
 
 .person-images {
@@ -214,7 +239,8 @@ top: 15px;
     padding-bottom: 0;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
-    gap: 40px;
+    gap: 24px;
+    display: flex;
     justify-content: center;
 }
 
@@ -225,7 +251,8 @@ background-color: var(--white);
 .team-icon {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    gap: 16px;
+    /*justify-content: space-around;*/
 }
 
 /*.team-icon {
@@ -256,16 +283,18 @@ background-color: var(--white);
 /*Customer Section*/
 
 .customer-section {
-    width: 1128px;
-    height: 200px;
+   /* width: 1128px;
+    height: 200px;*/
     padding: 120px 156px;
     text-align: center;
     justify-content: center;
+    display: contents;
 }
 
 
 .customer-icon {
     border: 1px solid #8e8f99;
+    padding: 16px 32px;
     
 }
 
@@ -304,44 +333,7 @@ background-color: var(--white);
 }
 /* End of WEBSTUDIO Styling (Footer)*/
 
-/* Hero Styling */
-.hero-text {
-    color: var(--white);
-    /*text-transform: uppercase;*/
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 60px;/* 107.143% */
-    letter-spacing: 1.12px;
-    padding-top: 188px;
-    margin: 0;
 
-}
-
-.hero-button {
-    border: none;
-    border-radius: 4px;
-    background: var(--iris, #4D5AE5);
-    color: var(--white);
-    line-height: 1.5;
-    padding: 16px 32px;
-    gap: 10px;
-    align-items: flex-start;
-}
-
-.hero-button:hover {
-    cursor: pointer;
-    background: var(--ocean);
-}
-
-.section-title {
-    color: var(--navyblue);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 2.5;/* 111.111% */
-    letter-spacing: 0.72px;
-    padding-top: 120px;
-}
 
 /*modal*/
 .backdrop {
@@ -506,6 +498,15 @@ background-color: var(--white);
 /* End of Hero styling */
 
 /*Footer Styling*/
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 72px;
+}
+
+
 .footer-text {
     color: var(--cloud);
     font-weight: 400;
@@ -516,17 +517,17 @@ background-color: var(--white);
 
 .bg-dark-footer {
     background-color: var(--navyblue);
-    height: 312px;
+    /*height: 312px;*/
     flex-shrink: 0;
-    padding-left: 156px;
-    padding-top: 101.5px;
+    /*padding-left: 156px;*/
+    padding-top: 80px;
    
 }
 
 .socialmedia {
-    width: 208px;
+   /* width: 208px;
     height: 80px;
-    flex-shrink: 0;
+    flex-shrink: 0;*/
 }
 
 .social-media-head {
@@ -538,13 +539,11 @@ background-color: var(--white);
     display: contents;
 }
 
-.footer-sectioning {
-    display: flex;
-    gap: 120px;
-}
+
 
 .social-media-icon {
     padding-top: 16px;
+    /*gap: 16px;*/
 }
 
 .footer-subscribe {
@@ -599,7 +598,7 @@ background-color: var(--white);
 /*ButtonSection*/
 
 main {
-    justify-content: center;
+    /*justify-content: center;*/
 }
 .portfolio-filter {
     display: inline-flex;
@@ -652,14 +651,15 @@ main {
 /*End of buttonsection*/
 
 /*Portfolio Images*/
-ul {
-    display: inline-flex;
-    gap: 24px;
-    list-style: none;
-}
+
 
 .container {
-    width: 1440px;
+    /*width: 1440px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: flex;*/
 
 }
 
@@ -739,3 +739,45 @@ ul {
 
 /*End of Portfolio Main Styling*/
 /*END OF PORTFOLIO-STYLE.CSS*/
+
+/*MEDIA QUERY*/
+
+@media (min-width:428px) {
+    .container {
+        width: 428px;
+    }   
+    .about-item {
+        flex-basis: calc(100% / 1 - 30px);
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 768px;
+    }
+    .about-item
+    .team-item {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .customer-icon {
+        flex-basis: calc(100% 3 / 30px);
+    }
+
+    
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1200px;
+    }
+
+    .about-item
+    .team-item {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+
+    .customer-icon {
+        flex-basis: calc(100% / 6 - 30px);
+    }
+}
