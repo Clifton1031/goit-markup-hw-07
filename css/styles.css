@@ -26,7 +26,7 @@ body {
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 
@@ -354,7 +354,6 @@ background-color: var(--white);
 /*End of Our team*/
 
 /*Customer Section*/
-
 .customer-section {
    /* width: 1128px;
     height: 200px;*/
@@ -364,6 +363,9 @@ background-color: var(--white);
     display: contents;
 }
 
+.icon-box {
+    padding-bottom: 96px;
+}
 
 .customer-icon {
     border: 1px solid #8e8f99;
@@ -379,7 +381,6 @@ background-color: var(--white);
 }
 /*End of customer Section*/
 
-/*---------End of Main Section---------*/
 /*ContactSection*/
 .contacts {
     color: var(--slate);
@@ -401,15 +402,11 @@ background-color: var(--white);
 }
 /*End of Contact Section*/
 
-/* End of WEBSTUDIO Styling (Header)*/
-
 /* WEBSTUDIO Styling (Footer) */
 .logo-studio-btm {
     color: var(--cloud);
 }
 /* End of WEBSTUDIO Styling (Footer)*/
-
-
 
 /*modal*/
 .backdrop {
@@ -602,16 +599,9 @@ background-color: var(--white);
     background-color: var(--navyblue);
     /*height: 312px;*/
     flex-shrink: 0;
-    /*padding-left: 156px;*/
     padding-top: 80px;
-    /*text-align: center;*/
+    padding-bottom: 96px;
    
-}
-
-.socialmedia {
-   /* width: 208px;
-    height: 80px;
-    flex-shrink: 0;*/
 }
 
 .social-media-head {
@@ -628,12 +618,6 @@ background-color: var(--white);
 .social-media-icon {
     padding-top: 16px;
     /*gap: 16px;*/
-}
-
-.footer-subscribe {
-    /*width: 453px;
-    height: 80px;
-    flex-shrink: 0;*/
 }
 
 .footer-subscribe-text {
@@ -677,24 +661,6 @@ background-color: var(--white);
     fill: white;
 }
 /* End of Footer Styling*/
-
-
-/*PORTFOLIO-STYLE.CSS*/
-/*Portfolio Main Styling*/
-/*ButtonSection*/
-
-main {
-    /*justify-content: center;*/
-}
-.portfolio-filter {
-   /* display: inline-flex;
-    align-items: flex-start;
-    justify-content: center;
-    border-radius: 4px;
-    font-weight: 500;
-    line-height: 1.5;
-    gap: 24px;*/
-}
 
 .container-btn {
     padding-top: 96px;
@@ -741,8 +707,6 @@ main {
 /*End of buttonsection*/
 
 /*Portfolio Images*/
-
-
 .container {
     /*width: 1440px;*/
     padding-left: 15px;
@@ -822,8 +786,6 @@ main {
 
 /*End of Portfolio Images*/
 
-/*End of Portfolio Main Styling*/
-/*END OF PORTFOLIO-STYLE.CSS*/
 
 /*MEDIA QUERY*/
 
@@ -834,7 +796,6 @@ main {
 }
 
 @media (min-width: 768px) {
-    /* 768px to 1199px */
 
     .mobile-nav,
     .js-close-menu, {
@@ -950,124 +911,3 @@ main {
         justify-content: center;
     }
 }
-/*@media (min-width:428px) {
-    .container {
-        width: 428px;
-    }   
-    .about-item {
-        flex-basis: calc(100% / 1 - 30px);
-    }
-
-        .mobile-nav {
-            display: none;
-        }
-}
-
-@media (min-width:768px) {
-    .container {
-        width: 768px;
-    }
-    .about-item,
-    .team-item {
-        flex-basis: calc(100% / 2 - 30px);
-    }
-
-    .customer-icon {
-        flex-basis: calc(100% 3 / 30px);
-    }
-
-    .footer {
-       /* text-align: center;*/
-    }
-    
-}*/
-/
-/*@media (min-width:1200px) {
-    .container {
-        width: 1200px;
-    }
-
-    .about-item,
-    .team-item {
-        flex-basis: calc(100% / 4 - 30px);
-    }
-
-    .customer-icon {
-        flex-basis: calc(100% / 6 - 30px);
-    }
-
-    .input-subscribe {
-        width: 264px;
-        margin-right: 24px;
-    }
-
-}
-
-@media (max-width: 427px) {
-    .hero-text {
-        font-size: 36px;
-        letter-spacing: 0.72px;
-        line-height: 1.11;
-    }
-
-    .footer-inner {
-            justify-content: center;
-            text-align: center;
-        }
-
-    .about-item h3 {
-        text-align: center;
-    }
-
-                .desktop-nav {
-                    display: none;
-                }
-                .mobile-menu.is-open {
-                  transform: translateX(0);
-                
-                 }
-                 .mobile-menu {
-                    display: block;
-                    height: 100vh;
-                    width: 100vh;
-                    position: fixed;
-                    background-color: white;
-                    transform: translateX(100%);
-                    transition: transform 250ms ease-in-out;
-                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                 }
-
-    .js-close-menu {
-        position: absolute;
-        top: 10px;
-        right: 25px;
-    }
-}
-
-@media ( max-width: 767px) {
-
-
-    .what-we-do {
-        display: none;
-    }
-
-    .about-item h3 {
-        font-size: 36px;
-        margin-bottom: 8px;
-    }
-
-    .list-prgh {
-        margin: 0;
-    }
-    
-    .component-icon {
-        display: none;
-    }
-
-    .footer-inner {
-        justify-content: center;
-        text-align: center;
-    }
-
-
-}*/
